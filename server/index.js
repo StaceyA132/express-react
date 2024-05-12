@@ -12,10 +12,18 @@ app.get('/messsage', (req, res)=> {
     // something when the server processes this request
 
     // send back a response to the client
-    res.send("hello from our server")
+    res.send("server is operational")
 })
 
-//run our server to listen a the port we defined
+app.get('/messsage', (req, res)=> {
+    // something when the server processes this request
+
+    // send back a response to the client
+    res.send("hello from our server!")
+})
+
+
+/*run our server to listen a the port we defined
 app.listen(port, ()=> {
     console.log('Server is running on port ${port}')
-})
+}) */
