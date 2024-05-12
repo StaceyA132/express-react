@@ -26,8 +26,13 @@ app.get('/messsage', (req, res)=> {
     res.send("hello from our server!")
 })
 
+app.post('/api', (req, res)=> {
+    res.send("received post request")
+})
 
-/*run our server to listen a the port we defined
+
+
+//run our server to listen a the port we defined
 app.listen(port, ()=> {
     console.log('Server is running on port ${port}')
-}) */
+}) 
